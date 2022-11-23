@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous" />
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <link rel="stylesheet" type="text/css" href="portfolio.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="sidenav-a">
+        <a id="nav-a" onclick="goFirstMain()">ABOUT</a>
+        <a id="nav-a" onclick="goSecondMain(); swapPosOff()">PORTFOLIO</a>
+        <a id="nav-a" onclick="goSecondMain(); swapPosOn()">SKILLS</a>
+      </div>
+      <div class="icons">
+        <ul>
+          <li>
+            <a>
+              <span><ion-icon name="logo-facebook"></ion-icon> </span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span>
+                <ion-icon name="logo-twitter"></ion-icon>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span>
+                <ion-icon name="logo-instagram"></ion-icon>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span>
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="firstMain">
+      <div class="phone">
+        <div class="button-circle" onclick="openNav()"></div>
+        <div class="figure-container">
+          <img class="figure-me" src="./pics/figure.png" />
+        </div>
+      </div>
+      <div class="phone-second">
+        <div class="button-circle" onclick="openNav()"></div>
+        <div class="figure-container-second">
+          <div class="glow">
+            <div class="letters">H E Y !<br />H E Y !<br />H E Y !</div>
+          </div>
+        </div>
+      </div>
+      <div class="phone-third">
+        <div class="button-circle" onclick="openForm()"></div>
+        <div class="figure-container-third">
+          <p id="Name">NAME</p>
+          <p id="Belle">Belle</p>
+          <p id="Pelanio">PELANIO</p>
+          <p id="Contacts">CONTACTS</p>
+          <p id="Email">
+            <a
+              id="Gmail"
+              href="https://accounts.google.com/v3/signin/identifier?dsh=S-2063361917%3A1668125949824926&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=ARgdvAuzfDeD4AUrjMcm3V_am1Nz_XKlJgB5NbcV27j3hoB4Bt9gqBqJac4jrOnBQ8GbP0496HNSpg"
+              >bellerustian.pelanio@g.msuiit.edu.ph</a
+            >
+          </p>
+          <p id="Number">+63 908 393 7237</p>
+          <p id="Address">ADDRESS</p>
+          <p id="Add">
+            A. Bonifacio Avenue, Tibanga Internal Rd, 9200 Iligan City
+          </p>
+          <div class="chat-popup" id="myForm">
+            <form class="form-container">
+              <h1>Chat</h1>
+
+              <label for="msg"><b>Message</b></label>
+              <textarea
+                placeholder="Type message.."
+                name="msg"
+                required></textarea>
+
+              <button type="submit" class="btn send">Send</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">
+                Close
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="phone-fourth">
+        <div class="button-circle" onclick="openNav()"></div>
+        <div class="figure-container-fourth">
+          <p id="Education">EDUCATION</p>
+          <p id="College">
+            MINDANAO STATE UNIVERSITY - ILIGAN INSTITUTE OF TECHNOLOGY
+          </p>
+          <p id="Date1">August 2019-current</p>
+          <p id="Program1">BSME</p>
+          <p id="High">SURIGAO DEL NORTE STATE UNIVERSITY</p>
+          <p id="Date2">August 2017-2019</p>
+          <p id="Program2">STEM</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="div-second" id="secondMain">
+      <div class="popup" id="openpop">
+        <div class="popUpJinx">
+          <p>
+            While most look at Jinx and see only a mad woman wielding an array
+            of dangerous weapons, a few remember her as a relatively innocent
+            girl from Zaun—a tinkerer with big ideas who never quite fit in. No
+            one knows for certain what happened to turn that sweet young child
+            into a wildcard, infamous for her wanton acts of destruction. But
+            once Jinx exploded onto the scene in Piltover, her unique talent for
+            sowing anarchy instantly became the stuff of legend.
+          </p>
+          <img id="img-popup" src="./pics/Jinx.jpg" />
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closePopUp()"
+          >&times;</a
+        >
+      </div>
+
+      <div class="div-context">
+        <p id="context">P O R T F O L I O</p>
+      </div>
+      <div class="slider">
+        <div class="slide">
+          <img id="img1" src="./pics/josh.jpg" />
+        </div>
+
+        <div class="slide">
+          <img id="img2" src="./pics/eye.jpg" />
+        </div>
+
+        <div class="slide" onclick="openPopUp()">
+          <img class="img" id="img3" src="./pics/Jinx.jpg" />
+        </div>
+
+        <div class="slide"></div>
+        <div class="slider__btn slider__btn--left">&nbsp;&#8249;</div>
+        <div class="slider__btn slider__btn--right">&nbsp;&#8250;</div>
+        <div class="dots"></div>
+      </div>
+      <div class="skills">
+        <div class="loc">
+          <div class="circle">
+            <ion-icon id="icon" name="logo-css3"></ion-icon>
+          </div>
+          <div class="circle">
+            <ion-icon id="icon" name="logo-html5"></ion-icon>
+          </div>
+          <div class="circle">
+            <ion-icon id="icon" name="logo-javascript"></ion-icon>
+          </div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./portfolio.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
